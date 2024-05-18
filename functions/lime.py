@@ -6,6 +6,8 @@ import numpy as np
 from torch import nn
 from torchvision import transforms
 from skimage.segmentation import mark_boundaries
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import lime
 from lime import lime_image

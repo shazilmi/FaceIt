@@ -1,5 +1,6 @@
 # Importing necessary packages.
 from flask_login import LoginManager
+from flask import redirect
 
 # Importing necessary functions to access the database.
 from functions.users import get_username
@@ -43,4 +44,4 @@ def request_loader(request):
 # Handling unauthorized requests.
 @lm.unauthorized_handler
 def kick():
-	return 'Login with an authorized username and password.'
+	return redirect('login')
