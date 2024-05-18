@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = "UTF-8"/>
+		<title>Lime explanation</title>
+		<link rel='stylesheet' href='/static/style.css'>
+	</head>
+	<body>
+		<h3>Select image to get explanation.</h3>
+		<form method = 'post'>
+			<select name = 'theimage' class = 'Input'>
+				{% for o in imgs %}
+				<option value='{{o}}'>{{o}}</option>
+				{% endfor %}
+			</select>
+			<input type="submit" value="Submit">
+		</form>
+
+	</body>
+</html>

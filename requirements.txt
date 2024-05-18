@@ -1,0 +1,6 @@
+Flask
+facenet_pytorch
+torch
+imagehash
+Pillow
+torchvision
